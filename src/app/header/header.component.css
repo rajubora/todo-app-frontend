@@ -1,0 +1,22 @@
+.header-container{
+    display: flex;
+    border: 1px dashed black;
+    margin-bottom: 5px;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+}
+.logo{
+    max-height: 80%;
+    width: auto;
+    margin-left: 4px;
+   
+    
+}
+.Refresh-button{
+
+background-color: blue;
+padding: 6px 12px;
+border-radius: 5px;
+}

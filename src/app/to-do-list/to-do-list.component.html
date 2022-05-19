@@ -1,0 +1,23 @@
+<div>
+<div *ngIf="getTodos().length!=0" >
+    <h3> to do list</h3>
+
+<div class="todo-point" *ngFor="let curretodos of getTodos() ; let i=index">
+
+<div>  
+   <h4> task {{i+1}}: {{curretodos.task}} </h4>
+ <h3>date:{{ curretodos.date}}</h3>
+</div>  
+ <div ><button class="delete-button" (click)="DeleteTodo(i)">delete</button>
+</div>
+</div>
+</div>
+
+
+
+
+    <h4 *ngIf="getTodos().length==0">
+        No todos availaible please add new one.
+   </h4>
+        
+</div>
